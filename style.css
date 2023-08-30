@@ -1,0 +1,334 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F3F3;
+    color: #393939;
+    
+  }
+
+  a {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #393939;
+  }
+
+  button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    color: #393939;
+  }
+
+  button:hover {
+    background-color: #7dd6ba;
+  }
+
+  .wrapper {
+    max-width: 1200px; /* Changed width to a maximum value */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Changed alignment */
+    align-items: center;
+  }
+
+  /*                   End of global files                  */
+
+ 
+  .header {
+    padding: 10px 0;
+    box-shadow: 0px 6px 2px 0px rgba(230, 230, 230, 1);
+    z-index: 1;
+    position: relative;
+  }
+  
+  .logo {
+    width: 137px;
+  }
+
+  .logo a {
+    cursor: pointer;
+  }
+
+  
+  .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Added alignment */
+  }
+  
+  .navigation li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+ 
+  
+  .login {
+    padding: 5px 15px; /* Adjust padding */
+    margin: 0 5px;
+    border: 2px solid #6FC5AA;
+    border-radius: 50px;
+    display: flex; /* Display the login link as a flex container */
+    align-items: center; /* Center the image and text vertically */
+    
+  }
+
+  .login:hover {
+    text-decoration: underline;
+  }
+  
+  .login img {
+    margin: 0 9px 0 0; /* Added some spacing between the image and text */
+    height: 20px;
+    width: 20px;
+  }
+
+  .about_us:hover {
+    text-decoration: underline;
+  }
+
+  
+  .header_green-button {
+    background-color: #6FC5AA;
+    padding: 7px 27px;
+    border: none;
+    border-radius: 50px;
+  }
+  
+  /* first screen =======================================*/
+
+  .first_screen {
+    background-image: url(./img/fsbg.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 17%;
+    background-size: 100%;
+  }
+  
+  .first_screen_content {
+    margin: 0 auto;
+    padding: 15% 0;
+    text-align: center;
+  }
+
+  .first_screen_content h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .first_screen_content h2{
+    font-family: 'Nunito';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  
+  .free_test_btn{
+    padding: 9px 30px;
+    background-color: #6FC5AA;
+    color: #393939;
+    font-size: 18px;
+    border: 2px solid transparent; /* Set initial border color */
+    border-radius: 50px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @keyframes glowing {
+   
+    0% { border-radius: #71cbaf; box-shadow: 0 0 17px #71cbaf; }
+    50% { border-radius: #7ddfc0; box-shadow: 0 0 22px #7ddfc0; }
+    100% { border-radius: #6ce9c1; box-shadow: 0 0 17px #7ce8c6; }
+    }
+
+  .free_test_btn {
+    animation: glowing 2s ease 0s infinite normal forwards;
+  }
+
+  /* ================ FQA ==========================*/
+
+  .faq-container {
+    display: flex;
+    gap: 20px;
+    
+  }
+
+  .faq-item {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .answer {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+  .answer.show-answer {
+    opacity: 1;
+    transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+  }
+
+  .details-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  /* Additional styles for highlighting clicked item */
+  .faq-item.clicked {
+    background-color: #cec8c8;
+  }
+
+  .answer {
+    display: none;
+    opacity: 0; /* Set initial opacity to 0 */
+  }
+
+  .details_content_background {
+    height: 510px;
+    width: 648px ;
+    border-radius: 25px;
+    text-align: center;
+    background-color:#e5e5e5;
+    box-shadow: 0px 0px 2px 1px rgba(222,219,222,1);
+     
+  }
+
+  .details-content {
+   padding: 35% 0 45%;
+
+  }
+
+  .faq-list{
+    margin: 35px 0 0 0;
+  }
+
+
+  
+
+  
+
+
+
+/*Pre Footer mail form ==========================================*/
+  
+
+
+  .pre_footer_ban {
+    background-color: #2F78AB;
+  }
+
+  .pre_footer_ban p{
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #F8F8F8;
+  }
+
+
+  #email_form_input {
+    width: 263px;
+    height: 46px;
+    margin: 42px 10px 42px 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #393939;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+  }
+
+  .email_form_btn{
+    width: 190px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #6FC5AA;
+    color: #393939;
+    font-size: 18px;
+    border: none;
+    text-decoration: none;
+  }
+
+    /*Footer =========================================*/
+
+  .logo_footer a {
+    width: 217 px;
+    height: 55 px;
+  }  
+
+  .footer_nav {
+    padding: 70px 0 60px;
+  }
+
+  .footer_nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0 0 20px 0;
+  }
+
+  .footer_nav li {
+    margin: 0 15px 0 0;
+    display: flex;
+  }
+
+  .footer_nav a {
+    font-family:'Nunito';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+
+  .footer_nav a:hover {
+    text-decoration: underline;
+  }
+
+  .mail {
+    padding: 0 0 25px 0;
+  }
+
+  .icon-sprite {
+    padding: 0 10px 0 0;
+    width: 32px; /* Adjust the width of each icon */
+    height: 32px; /* Adjust the height of each icon */
+    background-image: url('./img/f_sprite.svg'); /* Path to the sprite image */
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.icon1 {
+    background-position: 0 0; /* Position of the first icon in the sprite */
+}
+
+.icon2 {
+    background-position: -50px 0; /* Position of the second icon in the sprite */
+}
+
+.icon3 {
+    background-position: -103px 0; /* Position of the third icon in the sprite */
+}
+  
+ 
